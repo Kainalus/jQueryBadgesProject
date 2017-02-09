@@ -1,13 +1,12 @@
 $(function() {
 
-	jQuery.ajax({
+	$.ajax({
 	url: 'https://www.codeschool.com/users/3214770.json',
 	dataType: 'jsonp',
 	success: function(response) {
 		addCourses(response.courses.completed);
-		}
-
-	});
+	}
+});
 
 	function addCourses(courses) {
 
